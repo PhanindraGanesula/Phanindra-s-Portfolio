@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Your Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Phanindra's Portfolio</title>
+</head>
+<body>
+    <!-- Header with corrected Navigation -->
+    <header>
+        <a href="#home" class="logo">
+            <span class="logo-red">P</span><span class="logo-white">ortfolio</span>
+        </a>
+        
+        <!-- Hamburger Menu Icon -->
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- =================== HOME SECTION WITH VIDEO BACKGROUND =================== -->
+    <section class="home" id="home">
+        <!-- Video Background -->
+        <video autoplay muted loop id="home-video">
+            <source src="Images/contact.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+
+        <div class="home-img">
+            <img src="Images/pic.jpg" alt="Phanindra Ganesula's Profile Picture" onerror="this.onerror=null;this.src='https://placehold.co/400x400/b74b4b/white?text=Phanindra';">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Phanindra</span></h1>
+            <h3 class="typing-text">I'm a <span id="typed-text"></span></h3>
+        
+
+            <p>Hi, I’m Phanindra Ganesula — a student and aspiring developer from Hyderabad...</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- =================== ABOUT ME SECTION WITH VIDEO BACKGROUND =================== -->
+    <section class="about" id="about">
+        <!-- Video Background -->
+        <video autoplay muted loop id="about-video">
+            <source src="Images/about.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+
+        <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <p>Hi, I’m Phani Naidu — a student and aspiring developer from Hyderabad. I love building real-world projects, learning new technologies, and solving problems through code. This website is a collection of my work, skills, and online presence.</p>
+            <p>I am a passionate and driven computer science student based in Hyderabad, with a strong enthusiasm for technology and a keen interest in software development. My journey in programming began with a curiosity for how things work, which has since evolved into a dedicated pursuit of building meaningful and efficient applications. I thrive on challenges and am constantly seeking opportunities to learn and grow, both personally and professionally. When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and staying active with outdoor activities.</p>
+            <div class="about-details">
+                <div class="detail-item">
+                    <i class="fa-solid fa-user"></i>
+                    <span><strong>Name:</strong> Phanindra Ganesula</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span><strong>Location:</strong> Hyderabad, India</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span><strong>Email:</strong> phanindraganesula@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3>Sweet Delight – Bakery Ordering App</h3>
+                <p>Designed and built a complete mobile bakery application using the no-code platform Adalo. I developed the entire user flow, including user signup and login pages, a home screen to browse products, a shopping cart, and a final thank you and order confirmation screen. This project demonstrates my ability to plan and execute a full application lifecycle, from initial concept to a functional, user-friendly product.</p>
+            </div>
+            <!-- Project Card 2 -->
+            <a href="https://phanindraganesula.github.io/WeatherIQ/" target="_blank" class="project-card-link" rel="noopener noreferrer">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                    </div>
+                    <h3>Weather & Travel Guide Application</h3>
+                    <p>Developed a dynamic weather application using HTML, CSS, and JavaScript that provides real-time weather updates through an API. The app displays key metrics like humidity and wind speed. A standout feature is its integration of travel information: searching for a location dynamically updates the background with a picture of a famous landmark from that area and provides travel tips, including the best local food to try and the ideal time to visit.</p>
+                    <div class="full-overlay">
+                        <i class="fa-solid fa-arrow-up-right-from-square link-symbol"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-column">
+                <h3>Technical Skills</h3>
+                <div class="skill-category">
+                    <h4>Frontend Development</h4>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Backend & Databases</h4>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-c"></i><span>C Language</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-plus-minus"></i><span>C++</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-server"></i><span>DBMS</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <h3>Soft Skills</h3>
+                <div class="skill-category">
+                    <div class="skill-list soft-skills">
+                        <div class="skill-item"><i class="fa-solid fa-comments"></i><span>Communication</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-users"></i><span>Teamwork</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-lightbulb"></i><span>Problem-Solving</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-gears"></i><span>Adaptability</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Creativity</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-shield-halved"></i><span>Work Ethic</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            
+            <!-- Left Column -->
+            <div class="contact-info">
+                <div class="contact-info-top">
+                    <h1 class="section-title">Contact Me</h1>
+                    <p>I'm available for freelance work or full-time positions. If you have a project in mind or just want to say hello, feel free to reach out.</p>
+                </div>
+                <div class="contact-info-bottom">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/phanindra-ganesula-112b25363" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/PhanindraGanesula" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:phanindraganesula@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-solid fa-video"></i></a>
+                    </div>
+                    <a href="Images/Phanindra_Ganesula_Resume.pdf" download class="btn">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="contact-form-container">
+                <form id="contact-form" action="https://formspree.io/f/xkgzqqwr" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="_replyto" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div id="status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- This script handles the contact form submission -->
+    <script>
+        var form = document.getElementById("contact-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("status");
+          var data = new FormData(event.target);
+          
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              status.classList.add('success');
+              form.reset();
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+                status.classList.add('error');
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+            status.classList.add('error');
+          });
+
+          setTimeout(() => {
+            status.innerHTML = '';
+            status.classList.remove('success', 'error');
+          }, 5000);
+        }
+        
+        form.addEventListener("submit", handleSubmit)
+    </script>
+
+    <!-- Script for scroll highlighting -->
+    <script>
+        const sections = document.querySelectorAll("section[id]");
+
+        window.addEventListener("scroll", navHighlighter);
+
+        function navHighlighter() {
+          let scrollY = window.pageYOffset;
+          
+          sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 50;
+            let sectionId = current.getAttribute("id");
+            
+            if (
+              scrollY > sectionTop &&
+              scrollY <= sectionTop + sectionHeight
+            ){
+              document.querySelector("nav a[href*=" + sectionId + "]").classList.add("active");
+            } else {
+              document.querySelector("nav a[href*=" + sectionId + "]").classList.remove("active");
+            }
+          });
+        }
+    </script>
+    
+    <!-- Script for mobile menu -->
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('nav');
+
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('fa-x');
+            navbar.classList.toggle('active');
+        };
+    </script>
+    <script>
+  const texts = ["Web Developer", "Student", "Web Designer", "Programmer"];
+  let currentIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
+  const element = document.getElementById('typed-text');
+
+  function type() {
+    let currentText = texts[currentIndex];
+
+    if (deleting) {
+      charIndex--;
+      element.textContent = currentText.substring(0, charIndex);
+      if (charIndex === 0) {
+        deleting = false;
+        currentIndex = (currentIndex + 1) % texts.length;
+      }
+    } else {
+      charIndex++;
+      element.textContent = currentText.substring(0, charIndex);
+      if (charIndex === currentText.length) {
+        deleting = true;
+        setTimeout(type, 1000); // Pause before starting to delete
+        return;
+      }
+    }
+    setTimeout(type, deleting ? 100 : 200);
+  }
+
+  document.addEventListener('DOMContentLoaded', type);
+</script>
+  
+
+</body>
+</html>
