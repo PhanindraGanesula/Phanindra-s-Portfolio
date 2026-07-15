@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Phanindra Ganesula, a software developer and Computer Science student. Specialize in frontend graphics, Three.js/Globe.gl, and clean, efficient web engineering.">
+    <meta name="keywords"
+        content="Phanindra Ganesula, Phani Naidu, Software Developer, Web Developer Hyderabad, Computer Science Portfolio, Three.js, Globe.gl, Frontend Developer Portfolio">
+    <meta name="author" content="Phanindra Ganesula">
+
+    <!-- Open Graph / LinkedIn Meta Tags -->
+    <meta property="og:title" content="Phanindra Ganesula | Software Developer & Designer Portfolio">
+    <meta property="og:description"
+        content="Explore interactive projects, web graphics, and professional software development expertise. Let's connect!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/PhanindraGanesula">
+    <meta property="og:image" content="Images/pic.jpg">
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Your Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <title>Phanindra's Portfolio</title>
+    <title>Phanindra Ganesula | Software Developer Portfolio</title>
 </head>
+
 <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
     <!-- Header with corrected Navigation -->
     <header>
         <a href="#home" class="logo">
             <span class="logo-red">P</span><span class="logo-white">ortfolio</span>
         </a>
-        
+
         <!-- Hamburger Menu Icon -->
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
@@ -39,14 +61,17 @@
         <div class="video-overlay"></div>
 
         <div class="home-img">
-            <img src="Images/pic.jpg" alt="Phanindra Ganesula's Profile Picture" onerror="this.onerror=null;this.src='https://placehold.co/400x400/b74b4b/white?text=Phanindra';">
+            <img src="Images/pic.jpg" alt="Phanindra Ganesula's Profile Picture"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x400/b74b4b/white?text=Phanindra';">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>Phanindra</span></h1>
             <h3 class="typing-text">I'm a <span id="typed-text"></span></h3>
-        
 
-            <p>Hi, I’m Phanindra Ganesula — a student and aspiring developer from Hyderabad...</p>
+
+            <p>A passionate Computer Science student and software developer specializing in building modern web
+                applications, interactive interfaces, and robust client-side software. Explore my projects and skills
+                below!</p>
             <a href="#contact" class="btn">Hire Me</a>
         </div>
     </section>
@@ -62,8 +87,15 @@
 
         <div class="about-content">
             <h2 class="section-title">About Me</h2>
-            <p>Hi, I’m Phani Naidu — a student and aspiring developer from Hyderabad. I love building real-world projects, learning new technologies, and solving problems through code. This website is a collection of my work, skills, and online presence.</p>
-            <p>I am a passionate and driven computer science student based in Hyderabad, with a strong enthusiasm for technology and a keen interest in software development. My journey in programming began with a curiosity for how things work, which has since evolved into a dedicated pursuit of building meaningful and efficient applications. I thrive on challenges and am constantly seeking opportunities to learn and grow, both personally and professionally. When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and staying active with outdoor activities.</p>
+            <p>I am a dedicated Computer Science student and software developer based in Hyderabad, India. I specialize
+                in building interactive, user-centric web applications and solving complex analytical challenges. My
+                development journey is fueled by a passion for technical innovation and a drive to write clean,
+                efficient, and well-documented code.</p>
+            <p>Currently pursuing my Bachelor of Science in Computer Science (2023-2026) at Vignana Jyothi Institute of
+                Arts and Sciences, I have developed a strong foundation in software engineering principles, algorithms,
+                and databases. I love translating concepts into functional software—such as interactive 3D interfaces or
+                real-time data integrations—and I am actively looking for software engineering internships and associate
+                developer roles.</p>
             <div class="about-details">
                 <div class="detail-item">
                     <i class="fa-solid fa-user"></i>
@@ -86,21 +118,69 @@
         <h2 class="section-title">My Projects</h2>
         <div class="projects-container">
             <!-- Project Card 1 -->
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+            <a href="#" class="project-card-link">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>Sweet Delight – Bakery Ordering App</h3>
+                    <p>Designed and built a complete mobile bakery application using the no-code platform Adalo.
+                        Developed the entire user flow, including signup and login pages, a product browser home screen,
+                        shopping cart, and final order confirmation screen, demonstrating end-to-end product delivery.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Adalo</span>
+                        <span class="tag">No-Code</span>
+                        <span class="tag">UI/UX Design</span>
+                    </div>
+                    <div class="full-overlay">
+                        <i class="fa-solid fa-magnifying-glass link-symbol"></i>
+                    </div>
                 </div>
-                <h3>Sweet Delight – Bakery Ordering App</h3>
-                <p>Designed and built a complete mobile bakery application using the no-code platform Adalo. I developed the entire user flow, including user signup and login pages, a home screen to browse products, a shopping cart, and a final thank you and order confirmation screen. This project demonstrates my ability to plan and execute a full application lifecycle, from initial concept to a functional, user-friendly product.</p>
-            </div>
+            </a>
             <!-- Project Card 2 -->
-            <a href="https://phanindraganesula.github.io/WeatherIQ/" target="_blank" class="project-card-link" rel="noopener noreferrer">
+            <a href="https://phanindraganesula.github.io/WeatherIQ/" target="_blank" class="project-card-link"
+                rel="noopener noreferrer">
                 <div class="project-card">
                     <div class="project-icon">
                         <i class="fa-solid fa-cloud-sun-rain"></i>
                     </div>
-                    <h3>Weather & Travel Guide Application</h3>
-                    <p>Developed a dynamic weather application using HTML, CSS, and JavaScript that provides real-time weather updates through an API. The app displays key metrics like humidity and wind speed. A standout feature is its integration of travel information: searching for a location dynamically updates the background with a picture of a famous landmark from that area and provides travel tips, including the best local food to try and the ideal time to visit.</p>
+                    <h3>WeatherIQ: Intelligent Weather Insight Platform</h3>
+                    <p>Developed a dynamic weather application using HTML, CSS, and JavaScript with live API
+                        integration. Features real-time weather updates (humidity, wind speed) and travel suggestions
+                        like local landmarks, best food to try, and ideal visit times based on the searched location.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Rest API</span>
+                    </div>
+                    <div class="full-overlay">
+                        <i class="fa-solid fa-arrow-up-right-from-square link-symbol"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project Card 3 -->
+            <a href="https://github.com/PhanindraGanesula" target="_blank" class="project-card-link"
+                rel="noopener noreferrer">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h3>RadioSphere – 3D Global FM Radio Streaming Platform</h3>
+                    <p>Built an interactive 3D globe visualization web application using Three.js and Globe.gl. The
+                        project streams real-time radio broadcasts based on the geographical coordinates clicked by the
+                        user. Includes full media playback controls (Play, Pause, Stop, Next, Previous) and client-side
+                        data handling.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Three.js</span>
+                        <span class="tag">Globe.gl</span>
+                    </div>
                     <div class="full-overlay">
                         <i class="fa-solid fa-arrow-up-right-from-square link-symbol"></i>
                     </div>
@@ -113,38 +193,58 @@
     <section class="skills" id="skills">
         <h2 class="section-title">My Skills</h2>
         <div class="skills-container">
+            <!-- Technical Skills Column -->
             <div class="skills-column">
-                <h3>Technical Skills</h3>
+                <h3>Technical Expertise</h3>
+
                 <div class="skill-category">
-                    <h4>Frontend Development</h4>
-                    <div class="skill-list">
-                        <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Backend & Databases</h4>
+                    <h4>Programming Languages</h4>
                     <div class="skill-list">
                         <div class="skill-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
                         <div class="skill-item"><i class="fa-brands fa-java"></i><span>Java</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-c"></i><span>C Language</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-plus-minus"></i><span>C++</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-code"></i><span>C++</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-hashtag"></i><span>C Language</span></div>
                         <div class="skill-item"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Frontend & Graphics</h4>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript (ES6+)</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-circle-nodes"></i><span>Three.js</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-globe"></i><span>Globe.gl</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Systems & Tools</h4>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fa-brands fa-github"></i><span>Git & GitHub</span></div>
                         <div class="skill-item"><i class="fa-solid fa-server"></i><span>DBMS</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-cubes"></i><span>Adalo No-Code</span></div>
                     </div>
                 </div>
             </div>
+
+            <!-- Soft Skills Column -->
             <div class="skills-column">
-                <h3>Soft Skills</h3>
+                <h3>Professional Strengths</h3>
                 <div class="skill-category">
                     <div class="skill-list soft-skills">
-                        <div class="skill-item"><i class="fa-solid fa-comments"></i><span>Communication</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-users"></i><span>Teamwork</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-lightbulb"></i><span>Problem-Solving</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-gears"></i><span>Adaptability</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Creativity</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-shield-halved"></i><span>Work Ethic</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-lightbulb"></i><span>Analytical
+                                Problem-Solving</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-users"></i><span>Collaborative Teamwork</span>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-gears"></i><span>Agile Adaptability</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-comments"></i><span>Effective Communication</span>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-shield-halved"></i><span>Strong Work Ethic</span>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Creative UX
+                                Design</span></div>
                     </div>
                 </div>
             </div>
@@ -154,21 +254,24 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="contact-container">
-            
+
             <!-- Left Column -->
             <div class="contact-info">
                 <div class="contact-info-top">
                     <h1 class="section-title">Contact Me</h1>
-                    <p>I'm available for freelance work or full-time positions. If you have a project in mind or just want to say hello, feel free to reach out.</p>
+                    <p>I'm available for freelance work or full-time positions. If you have a project in mind or just
+                        want to say hello, feel free to reach out.</p>
                 </div>
                 <div class="contact-info-bottom">
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/phanindra-ganesula-112b25363" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/PhanindraGanesula" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/phanindra-ganesula-112b25363" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/PhanindraGanesula" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                         <a href="mailto:phanindraganesula@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                         <a href="#"><i class="fa-solid fa-video"></i></a>
                     </div>
-                    <a href="Images/Phanindra_Ganesula_Resume.pdf" download class="btn">
+                    <a href="Images/Phanindra_Ganesula_up.pdf" download class="btn">
                         <i class="fa-solid fa-download"></i> Download CV
                     </a>
                 </div>
@@ -187,47 +290,62 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Phanindra Ganesula. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/phanindra-ganesula-112b25363" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/PhanindraGanesula" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:phanindraganesula@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="footer-credit">Designed & Developed with ❤️</p>
+        </div>
+    </footer>
+
     <!-- This script handles the contact form submission -->
     <script>
         var form = document.getElementById("contact-form");
-        
-        async function handleSubmit(event) {
-          event.preventDefault();
-          var status = document.getElementById("status");
-          var data = new FormData(event.target);
-          
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-            if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
-              status.classList.add('success');
-              form.reset();
-            } else {
-              response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                } else {
-                  status.innerHTML = "Oops! There was a problem submitting your form"
-                }
-                status.classList.add('error');
-              })
-            }
-          }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-            status.classList.add('error');
-          });
 
-          setTimeout(() => {
-            status.innerHTML = '';
-            status.classList.remove('success', 'error');
-          }, 5000);
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("status");
+            var data = new FormData(event.target);
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your submission!";
+                    status.classList.add('success');
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                        status.classList.add('error');
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+                status.classList.add('error');
+            });
+
+            setTimeout(() => {
+                status.innerHTML = '';
+                status.classList.remove('success', 'error');
+            }, 5000);
         }
-        
+
         form.addEventListener("submit", handleSubmit)
     </script>
 
@@ -238,25 +356,25 @@
         window.addEventListener("scroll", navHighlighter);
 
         function navHighlighter() {
-          let scrollY = window.pageYOffset;
-          
-          sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 50;
-            let sectionId = current.getAttribute("id");
-            
-            if (
-              scrollY > sectionTop &&
-              scrollY <= sectionTop + sectionHeight
-            ){
-              document.querySelector("nav a[href*=" + sectionId + "]").classList.add("active");
-            } else {
-              document.querySelector("nav a[href*=" + sectionId + "]").classList.remove("active");
-            }
-          });
+            let scrollY = window.pageYOffset;
+
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 50;
+                let sectionId = current.getAttribute("id");
+
+                if (
+                    scrollY > sectionTop &&
+                    scrollY <= sectionTop + sectionHeight
+                ) {
+                    document.querySelector("nav a[href*=" + sectionId + "]").classList.add("active");
+                } else {
+                    document.querySelector("nav a[href*=" + sectionId + "]").classList.remove("active");
+                }
+            });
         }
     </script>
-    
+
     <!-- Script for mobile menu -->
     <script>
         let menuIcon = document.querySelector('#menu-icon');
@@ -266,40 +384,80 @@
             menuIcon.classList.toggle('fa-x');
             navbar.classList.toggle('active');
         };
+
+        // Close mobile menu when a nav link is clicked
+        let navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.onclick = () => {
+                menuIcon.classList.remove('fa-x');
+                navbar.classList.remove('active');
+            };
+        });
+    </script>
+
+    <!-- Script for scroll progress bar -->
+    <script>
+        window.addEventListener("scroll", () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress-bar").style.width = scrolled + "%";
+        });
+    </script>
+
+    <!-- Script for scroll reveal animations -->
+    <script>
+        const revealElements = document.querySelectorAll(".project-card, .skills-column, .about-content, .contact-container");
+
+        const revealOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("reveal");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        revealElements.forEach(el => {
+            el.classList.add("reveal-hidden");
+            revealOnScroll.observe(el);
+        });
     </script>
     <script>
-  const texts = ["Web Developer", "Student", "Web Designer", "Programmer"];
-  let currentIndex = 0;
-  let charIndex = 0;
-  let deleting = false;
-  const element = document.getElementById('typed-text');
+        const texts = ["Web Developer", "Student", "Web Designer", "Programmer"];
+        let currentIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+        const element = document.getElementById('typed-text');
 
-  function type() {
-    let currentText = texts[currentIndex];
+        function type() {
+            let currentText = texts[currentIndex];
 
-    if (deleting) {
-      charIndex--;
-      element.textContent = currentText.substring(0, charIndex);
-      if (charIndex === 0) {
-        deleting = false;
-        currentIndex = (currentIndex + 1) % texts.length;
-      }
-    } else {
-      charIndex++;
-      element.textContent = currentText.substring(0, charIndex);
-      if (charIndex === currentText.length) {
-        deleting = true;
-        setTimeout(type, 1000); // Pause before starting to delete
-        return;
-      }
-    }
-    setTimeout(type, deleting ? 100 : 200);
-  }
+            if (deleting) {
+                charIndex--;
+                element.textContent = currentText.substring(0, charIndex);
+                if (charIndex === 0) {
+                    deleting = false;
+                    currentIndex = (currentIndex + 1) % texts.length;
+                }
+            } else {
+                charIndex++;
+                element.textContent = currentText.substring(0, charIndex);
+                if (charIndex === currentText.length) {
+                    deleting = true;
+                    setTimeout(type, 1000); // Pause before starting to delete
+                    return;
+                }
+            }
+            setTimeout(type, deleting ? 100 : 200);
+        }
 
-  document.addEventListener('DOMContentLoaded', type);
-</script>
-  
+        document.addEventListener('DOMContentLoaded', type);
+    </script>
+
 
 </body>
-</html>
 
+</html>
